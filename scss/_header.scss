@@ -1,0 +1,260 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background: $dark;
+    &_fixed{
+        .nav-list__item{
+            padding: 0.5rem 0;
+        }
+    }
+    &__info{
+        background: #fff;
+        padding: 0.7rem 0 0.9rem 1.7%;
+        line-height: 1.7rem;
+        @include bp(sm){
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            padding: 0.6rem 0 0.7rem 0;
+            .circle-arrow{
+                margin: -0.1rem 0 0 0.7rem;
+            }
+        }
+    }
+    &__block{
+        padding: 1.4rem 0 1.5rem;
+        position: relative;
+        @include bp(md){
+            padding: 1.7rem 0 1.8rem;
+        }
+    }
+    &__logo{
+        margin: 0.1rem 8.7% 0 0;
+        @include bp(xxl){
+            margin-right: 4%;
+        }
+        @include bp(lg){
+           width: 11.1rem;
+        }
+        @include bp(md){
+            position: absolute;
+            margin: 0 auto;  
+            left: 0;
+            right: 0;
+        }
+        @include bp(sm){
+            width: 10rem;
+        }
+    }
+}
+.logo{
+    flex-shrink: 0;
+    &:hover{opacity: 0.7;}
+}
+.info-nav{
+    margin: 0 0 0 auto;
+    &__link{
+        text-align: center;
+        position: relative;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #fff;
+        &:not(:first-child){
+            margin-left: 4.8rem;
+            @include bp(xl){
+                margin-left: 3rem;
+            }
+        }
+    }
+    &__text{
+        margin-top: 0.2rem;
+    }
+    &__icon{
+        @include bp(xxl-up){
+            margin-right: 1.2rem;
+            &.icon-basket{
+                margin-right: 1.65rem;
+            }
+        }
+    }
+    &__count{
+        display: block;
+        position: absolute;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        color: #fff;
+        background: $primary;
+        border-radius: 50%;
+        top: -0.6rem;
+        right: -1.4rem;
+        @include bp(sm){
+            top: -0.7rem;
+            right: -0.9rem;
+        }
+    }
+}
+.navbar{
+    flex-grow: 1;
+    @include bp(lg-up){
+        position: static;
+        background: none;
+        transform: none!important;
+        transition: none;
+        overflow: visible;
+        padding: 0;
+    }
+    @include bp(md){
+        padding-top: 7rem;
+    }
+}
+.nav{
+    &__close{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    &-list{
+        &__item{
+            margin-right: 3.2rem;
+            padding: 1.5rem 0;
+            transition: padding 0.3s ease-in-out;
+            @include bp(lg-up){
+                &>.nav-list__dropdown-menu.collapse{
+                    display: none;
+                }
+                &:hover{
+                    &>.nav-list__dropdown-menu{
+                        display: block;
+                        height: auto!important;
+                    }
+                    &>.dropdown-toggle{
+                        color: $primary;
+                        &::after{opacity: 0;}
+                        &::before{opacity: 1;}
+                    }
+                }
+            }
+            @include bp(lg){
+                margin-right: 2rem;
+            }
+            @include bp(md){
+                margin-right: 0;
+                padding: 0;
+            }
+        }
+        &__link{
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            display: inline-flex;
+            color: #fff;
+            &.active{
+                color: $primary;
+            }
+            &.dropdown-toggle{
+                padding: 0 1.7rem 0 0;
+                border: none;
+                &:not(.collapsed)::after, &:not(.collapsed)::before{
+                    transform: rotate(180deg);
+                }
+                &::after{
+                    @include bp(lg-up){
+                        background: url(../img/icons/caret-inversion.svg) 0 0 no-repeat;
+                        background-size: contain;
+                    }
+                }
+                &::after, &::before{
+                    right: 0;
+                }
+                &::after, &::before{
+                    @include bp(lg-up){
+                        transform: none!important;
+                    }
+                }
+            }
+            @include bp(lg){
+                font-size: 1.2rem;
+                white-space: nowrap;
+            }   
+            @include bp(md){
+                font-size: 1.8rem;
+                display: block;
+                line-height: 2.6rem;
+                padding: 1.5rem 2rem!important;
+                &:not(:hover){
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+.dropdown-menu-collapse{
+    @include bp(lg-up){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 2rem 2.4rem 1rem 1.8rem;
+        min-width: 40.2rem;
+    }
+}
+.dropdown-link{
+    margin-bottom: 1.4rem;
+    &:hover{
+        color: $black;
+    }
+    &__image{
+        min-width: 5rem;
+        flex-shrink: 0;
+        margin-right: 0.9rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__title{
+        margin: 0 auto 0.1rem 0;
+        min-height: 4rem;
+    }
+    &__price{
+        white-space: nowrap;
+        margin: 0 0 2.2rem 2rem;
+    }
+    .circle-arrow{
+        flex-shrink: 0;
+        margin-bottom: 2.2rem;
+    }
+}
+.btn-menu{
+    display: block;
+    border: none;
+    align-self: center;
+    background: none;
+    flex-shrink: 0;
+    &__item{
+        display: block;
+        width: 2rem;
+        height: 0.2rem;
+        border-top-style: 5px;
+        background: #fff;
+        transition: all 0.3s ease-out;
+    }
+    &__item+&__item{
+        margin-top: 0.5rem;
+    }
+    &:hover{
+        .btn-menu__item{
+            background: $primary;
+        }
+    }
+}
