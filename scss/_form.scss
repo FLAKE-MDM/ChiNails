@@ -1,31 +1,6 @@
 .form{
     &-group{
-        &_margin{
-            &-xs{
-                margin-bottom: 1.2rem;
-                @include bp(sm){
-                    margin-bottom: 1.6rem;
-                }
-            }
-            &-sm{
-                margin-bottom: 2.4rem;
-            }
-            &-md{
-                margin-bottom: 3.2rem;
-                @include bp(md){
-                    margin-bottom: 2rem;
-                }
-            }
-            &-lg{
-               margin-bottom: 4.4rem;
-            }
-            &-xl{
-               margin-bottom: 4.7rem;
-               @include bp(sm){
-                margin-bottom: 2.3rem;
-               }
-            }
-        }
+
     }
     &-control{
         font-family: inherit;
@@ -346,7 +321,6 @@ textarea.form-control_text{
     }
     &__link{
         white-space: nowrap;
-        color: $light;
         &.show{
             border-color: $black;
         }

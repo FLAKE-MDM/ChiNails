@@ -17,17 +17,15 @@ body{
     font: 400 1.6rem/2.8rem 'Inter', sans-serif;
     color: $black;
     background: #fff;
-    padding-top: 12.2rem;
+
     @include bp(md){
-        padding-top: 9.5rem;
+
     }
     @include bp(sm){
-        padding-top: 9rem;
-        font-size: 1.4rem;
-        line-height: 2.2rem;
+
     }
 
-    &.overflow-none, &.overflow-none-search{
+    &.overflow-none{
         overflow: hidden;
         @include bp(xl-up){
             padding-right: 1.7rem;
@@ -35,10 +33,6 @@ body{
                 margin-right: 1.7rem;
             }
         }
-    }
-    &.fixed-header{
-        padding-top: 5.9rem;
-        overflow: hidden;
     }
 }
 .wrap{
@@ -58,114 +52,7 @@ body{
     @include bp(md){
     }
 }
-.pane{
-    display: block;
-    height: auto;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    max-width: 100%;
-    background: #fff;
-    transform: translateX(100%);
-    transition: all 0.3s ease-out;
-    z-index: 98;
-    width: 57.1rem;
-    padding: 21.1rem 9.9rem 20rem 8.6rem;
-    @include bp(md){
-        padding: 9rem 4rem;
-    }
-    @include bp(sm){
-        padding: 0 2.4rem 4rem;
-        width: 100%;
-    }
-    &.show{
-        transform: none;
-    }
-    &_left{
-        right: auto;
-        left: 0;
-        &:not([class*="show"]){
-            transform: translateX(-100%);
-        }
-    }
-    &-close__link, &-close__link-nav{
-        display: block;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background: rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-        &.show, &.show-search{
-            z-index: 97;
-            opacity: 1;
-        }
-    }
-    &-close__link-nav{
-        &:not([class*="show"]){
-            display: none;
-        }
-        @include bp(lg-up){
-            display: none!important;
-        }
-    }
-    &__close{
-        position: absolute;
-        top: 4.8rem;
-        right: 4.8rem;
-        &:hover{
-            opacity: 0.3;
-        }
-        @include bp(sm){
-            position: static;
-        }
-    }
-    .text_size-sm{
-        line-height: 1.7rem;
-    }
-    .label{
-        line-height: 2rem;
-    }
-    .title_margin-bottom-sm{
-        @include bp(sm){
-            margin-bottom: 1.2rem;
-        }
-    }
-    &__form{
-        margin: 4.8rem 0;
-        @include bp(sm){
-            margin: 4rem 0;
-        }
-    }
-    &__header{
-        @include bp(sm){
-            margin-bottom: 4rem;
-            padding: 2rem 0 1.3rem;
-            position: relative;
-            &:after{
-                content: '';
-                display: block;
-                position: absolute;
-                left: -3rem;
-                right: -3rem;
-                bottom: 0;
-                border-bottom: 1px solid #F1F1F1;
-            }
-        }
-    }
-}
-#login-code{
-    margin-bottom: 7.9rem;
-    @include bp(sm){
-        margin-bottom: 4.8rem;
-    }
-}
+
 .pos-rel{
     position: relative;
     z-index: 1;
@@ -177,18 +64,6 @@ body{
 .bg{
     &_primary{
         background: $primary;
-    }
-    &_light{
-        background: #F6F6F6;
-    }
-    &_dark{
-        background: $dark;
-        color: #fff;
-    }
-}
-.no-wrap-sm{
-    @include bp(sm){
-        white-space: nowrap;
     }
 }
 .w-100{
@@ -213,49 +88,13 @@ body{
     margin-left: -1.5rem;
     margin-right: -1.5rem;
     @include bp(sm){
-        margin-left: -0.65rem;
-        margin-right: -0.65rem;
+
     }
     & > *{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         @include bp(sm){
-            padding-left: 0.65rem;
-            padding-right: 0.65rem;
-        }
-    }
-    &_sm{
 
-        @include bp(md){
-
-        }
-        @include bp(sm){
-
-        }
-        & > *{
-
-            @include bp(md){
-
-            }
-            @include bp(sm){
-
-            }
-        }
-    }
-    &_md{
-        margin-left: -1.2rem;
-        margin-right: -1.2rem;
-        & > *{
-            padding-left: 1.2rem;
-            padding-right: 1.2rem;
-        }
-    }
-    &_lg{
-        @include bp(xxxl-up){
-
-            & > *{
-
-            }
         }
     }
 }
@@ -269,7 +108,6 @@ body{
             height: 0.6rem;
             margin: 0 0.4rem;
             opacity: 1;
-            background: $light;
             &:hover, &-active{
                 background: $primary!important;
             }
@@ -278,123 +116,14 @@ body{
 }
 
 
-// breadcrumb
-.breadcrumb{
-    margin: 3.4rem 0 2.2rem;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    display: flex;
-    flex-wrap: wrap;
-    @include bp(md){
-        font-size: 1rem;
-        line-height: 1.2rem;
-        margin: 1.6rem 0 0.2rem;
-    }
-    &_margin{
-        @include bp(lg-up){
-            margin-bottom: 2.2rem;
-        }
-    }
-    &__item{
-        margin-bottom: 1rem;
-    }
-    &__item+&__item{
-        &:before{
-            content: '/';
-            color: #F1F1F1;
-            display: inline-block;
-            margin: 0 0.8rem;
-            @include bp(md){
-                margin: 0 0.55rem;
-            }
-        }
-    }
-    &__item.d-none+&__item{
-        @include bp(sm){
-            &:before{
-                display: none;
-            }
-        }
-    }
-    &__link{
-        &:not(:hover){
-            color: $light;
-        }
-    }
-}
-
-
-// main
-.main{
-    @include bp(lg-up){
-        padding-top: 3.5rem;
-    }
-    &_about{
-        padding: 0;
-        max-width: 84rem;
-        &>p{
-            margin-bottom: 4.4rem;
-            margin: 0 3rem 4.4rem 0;
-            @include bp(md){
-                margin: 0 1rem 3.1rem 0;
-            }
-        }
-    }
-}
-.image-block{
-    margin-bottom: 4.2rem;
-    @include bp(sm){
-        margin: 0 1.6rem 2.7rem;
-        img{
-            min-height: 22.8rem;
-            object-fit: cover;
-        }
-    }
-}
-
-// mark
-.mark {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-    padding: 1.1rem 1.25rem;
-    min-width: 8.6rem;
-    border-radius: 4px;
-    margin: 0 0.8rem 0.8rem 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    &_warning {
-        background: #FFDD2D;
-    }
-    &_dark {
-        background: #000;
-        color: #fff;
-    }
-    &_light{
-        background: $light;
-        padding: 1rem;
-        min-width: 8rem;
-    }
-}
-
 
 
 
 @import 'form';
-@import 'header';
+// @import 'header';
 @import 'home';
-@import 'catalogue';
-@import 'calculator';
-@import 'review';
-@import 'footer';
-@import 'item';
-@import 'about';
-@import 'order';
-@import 'certificates';
-@import 'faq';
-@import 'delivery';
-@import 'contacts';
-@import 'user';
+// @import 'footer';
+
 
 
 
