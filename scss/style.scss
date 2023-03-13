@@ -14,7 +14,7 @@
 
 
 body{
-    font: 400 1.6rem/2.8rem 'Inter', sans-serif;
+    font: 300 1.6rem/2.4rem 'Helvetica Neue', sans-serif;
     color: $black;
     background: #fff;
 
@@ -42,14 +42,12 @@ body{
     flex-direction: column;
 }
 .container{
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin: 0 auto;
     width: 100%;
-    @include bp(xxxl-up){
-        max-width: 1442px;
-    }
-    @include bp(md){
+    @include bp(xxl-up){
+        max-width: 1246px;
     }
 }
 
@@ -85,14 +83,14 @@ body{
     }
 }
 .row{
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
     @include bp(sm){
 
     }
     & > *{
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
         @include bp(sm){
 
         }
@@ -102,15 +100,20 @@ body{
 
 // swiper
 .swiper{
-    &-pagination{
-        &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
-            opacity: 1;
-            &:hover, &-active{
-                background: $primary!important;
-            }
+    // &-pagination{
+    //     &-bullet{
+    //         width: 0.6rem;
+    //         height: 0.6rem;
+    //         margin: 0 0.4rem;
+    //         opacity: 1;
+    //         &:hover, &-active{
+    //             background: $primary!important;
+    //         }
+    //     }
+    // }
+    &-btn{
+        &:hover, &.swiper-button-disabled{
+            opacity: 0.5;
         }
     }
 }
@@ -120,8 +123,9 @@ body{
 
 
 @import 'form';
-// @import 'header';
+@import 'header';
 @import 'home';
+@import 'stock';
 // @import 'footer';
 
 

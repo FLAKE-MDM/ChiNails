@@ -1,7 +1,36 @@
+// fake-select
+$('.fake-select__item').click(function(){
+  $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
+  $(this).addClass('fake-select__item_active');
+  $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
+  $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
+});
+
+// home
+new Swiper(".branches-slider", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".branches-slider-next",
+    prevEl: ".branches-slider-prev",
+  },
+  breakpoints: {
+    1200: {
+      spaceBetween: 32,
+    },
+  },
+});
+
+
+
+
+
+
+
 // // home
 // new Swiper(".preview-slider", {
 //   slidesPerView: 1,
-//   loop: true, 
+//   loop: true,
 //   pagination: {
 //     el: ".swiper-pagination",
 //     clickable: true,
@@ -104,7 +133,6 @@
 //       codeGroupInputs[i+1].focus()
 //     }
 //   })
-  
 // }
 
 // $(".pass-view").click(function(e){
@@ -151,14 +179,14 @@
 //           slidesPerView: 4,
 //         },
 //         992: {
-//           slidesPerView: 5,    
-//           spaceBetween: 16,    
+//           slidesPerView: 5,
+//           spaceBetween: 16,
 //           direction: "vertical",
 //         },
 //         1200: {
-//           slidesPerView: 6,   
-//           spaceBetween: 16,    
-//           direction: "vertical", 
+//           slidesPerView: 6,
+//           spaceBetween: 16,
+//           direction: "vertical",
 //         },
 //       },
 //     },
@@ -226,20 +254,14 @@
 //   spaceBetween: 24,
 //   freeMode: true,
 //   breakpoints: {
-//     992: {   
-//       spaceBetween: 47,    
+//     992: {
+//       spaceBetween: 47,
 //     },
 //   },
 // });
 
 // // calculator
-// // fake-select
-// $('.fake-select__item').click(function(){
-//   $(this).parents(".fake-select").find('.fake-select__item').removeClass('fake-select__item_active active');
-//   $(this).addClass('fake-select__item_active');
-//   $(this).parents('.fake-select').find('.fake-select__value').html(this.innerHTML)
-//   $(this).parents('.fake-select').find('.fake-select__link').addClass('active');
-// });
+
 
 // $( function() {
 //   $( "#weight-range" ).slider({

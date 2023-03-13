@@ -1,0 +1,104 @@
+// preview-home
+.preview-home{
+    &__text{
+        margin: 0.6rem 0 0 0.2rem;
+    }
+    &__image{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    &__logo{
+        position: absolute;
+        top: 0;
+        left: 1.4%;
+        right: 0;
+        margin: 0 auto;
+        width: 11.8rem;
+        transform: translateY(-50%);
+    }
+}
+
+// brief-price
+.brief-price{
+    &__image{
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            right: 1.6rem;
+        }
+    }
+    &__text{
+        @include bp(xl-up){
+            padding-left: 10%;
+        }
+    }
+}
+.price{
+    &-group{
+        margin-bottom: 6.9rem;
+    }
+    &-item{
+        border-bottom: 1px solid rgba($black, 0.2);
+        padding-bottom: 1.8rem;
+        margin-bottom: 1.5rem;
+        &__title{
+            margin: 0 2rem 0.2rem 0;
+        }
+    }
+}
+
+// branches-section
+.branches{
+    &-section{
+        position: relative;
+    }
+    &-slider{
+        @include bp(xl-up){
+            margin-right: -9.5%;
+            padding-right: 9.5%;
+        }
+        &-prev, &-next{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &-next{
+            left: auto;
+            right: 0;
+        }
+    }
+}
+.branch-item {
+    &:hover{
+        .branch-item__buttons{
+            opacity: 1;
+        }
+    }
+    &__header {
+    }
+    &__title{
+        letter-spacing: 0.13rem;
+        margin-bottom: 0.5rem;
+    }
+    &__image {
+        position: relative;
+    }
+    &__buttons {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-out;
+        background: rgba($black, 0.5);
+        .btn{
+            margin: 0 1.2rem;
+        }
+    }
+}

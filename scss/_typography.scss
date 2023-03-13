@@ -3,7 +3,7 @@ a{
     text-decoration: none;
     color: $black;
     &:hover{
-        // color: $secondary;
+        color: $primary - 80;
     }
 }
 // .link_underline{
@@ -15,8 +15,58 @@ a{
 //         border-color: transparent;
 //     }
 // }
-p{
-    margin-bottom: 1.6rem;
+.ms{
+    &-1{
+        margin-left: 0.4rem!important;
+    }
+}
+.me{
+    &-1{
+        margin-right: 0.4rem!important;
+    }
+    &-2{
+        margin-right: 0.8rem!important;
+    }
+}
+.mb{
+    &_xs{
+        margin-bottom: 2.4rem;
+    }
+    &_sm{
+        margin-bottom: 3rem;
+    }
+    &_md{
+        margin-bottom: 5.6rem;
+    }
+    &_lg{
+        margin-bottom: 6.5rem;
+    }
+    &_xl{
+        margin-bottom: 8rem;
+    }
+    &_xxl{
+        margin-bottom: 12.4rem;
+    }
+}
+.mt{
+    &_xs{
+        margin-top: 2.4rem;
+    }
+    &_sm{
+        margin-top: 3rem;
+    }
+    &_md{
+        margin-top: 5.6rem;
+    }
+    &_lg{
+        margin-top: 6.5rem;
+    }
+    &_xl{
+        margin-top: 8rem;
+    }
+    &_xxl{
+        margin-top: 12.4rem;
+    }
 }
 .title{
     &_size{
@@ -27,10 +77,11 @@ p{
             
         }
         &-md{
-            
+            font: 400 4rem/5.2rem 'EB Garamond', serif;
         }
         &-lg{
-            
+            font: 400 4.8rem/6.3rem 'EB Garamond', serif;
+            letter-spacing: 0.48rem;
         }
         &-xl{
             
@@ -39,22 +90,22 @@ p{
 
 }
 .text{
-    &_upper{
-        text-transform: uppercase;
-    }
     // size
     &_size{
         &-xs{
             
         }
         &-sm{
-            
+            font-size: 1.4rem;
+            line-height: 2.1rem;
         }
         &-md{
-            
+            font-size: 1.8rem;
+            line-height: 2.7rem;
         }
         &-lg{
-            
+            font-size: 2rem;
+            line-height: 3rem;
         }
         &-xl{
             
@@ -74,12 +125,6 @@ p{
         color: $danger;
     }
     // weight
-    &_normal{
-        font-weight: 400;
-    }
-    &_mediumbold{
-        font-weight: 500;
-    }
     &_bold{
         font-weight: 700;
     }
@@ -97,6 +142,12 @@ p{
     }
     &_right{
         text-align: right!important;
+    }
+    &_styling{
+        font-family: 'EB Garamond', serif;
+    }
+    &_upper{
+        text-transform: uppercase;
     }
 }
 
