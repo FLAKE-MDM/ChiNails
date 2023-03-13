@@ -19,6 +19,11 @@
 .icon-instagram{
     background-image: url(../img/icons/instagram.svg);
 }
+.icon-instagram_lg{
+    background-image: url(../img/icons/instagram.svg);
+    width: 3.2rem;
+    height: 3.2rem;
+}
 .icon-whatsapp{
     background-image: url(../img/icons/whatsapp.svg);
 }
@@ -44,6 +49,12 @@
     width: 9.3rem;
     height: 0.9rem;
     background-image: url(../img/icons/arrow-prev.svg);
+}
+.icon-arrow-next_sm{
+    width: 4.5rem;
+    height: 0.9rem;
+    background-image: url(../img/icons/arrow-next_sm.svg);
+    margin-left: 1.4rem;
 }
 .icon-{
     width: rem;

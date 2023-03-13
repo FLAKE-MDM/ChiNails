@@ -1,28 +1,8 @@
-.payment{
-    margin: -0.1rem -2.05rem 0;
-    @include bp(md){
-        justify-content: space-between;
-        padding: 0 3.5%;
-        margin: 0 0 2.5rem;
-        width: 100%;
-    }
-    &__item{
-        margin: 0 2.05rem;
-        @include bp(sm){
-            margin: 0;
-        }
-    }
-}
 .footer{
-    padding: 5.2rem 0 4.7rem;
-    background: $dark;
+    border-top: 1px solid rgba($black,0.2);
     margin-top: auto;
+    padding-top: 4rem;
     @include bp(md){
-        padding: 2.4rem 0 1rem;
-    }
-    &__logo{
-        width: 10.2rem;
-        margin-right: 4.2%;
     }
     &-nav{
         .nav-list__item{
@@ -36,79 +16,14 @@
     &__phone{
         margin: 0.5rem 0 0;
         @include bp(sm){
-            align-items: center;
-            margin: 0;
-            display: inline-flex;
-        }
-        .icon{
-            margin-right: 1.7rem;
-            @include bp(sm){
-                margin-right: 1.2rem;
-            }
+
         }
     }
     &__social-list{
         margin: 0.3rem 0 0 4rem;
-        @include bp(md){
-            margin: 2.4rem 0 2.5rem;
-            padding: 1.1rem 0 1rem;
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            &:before{
-                content: '';
-                display: block;
-                position: absolute;
-                z-index: -1;
-                left: -100%;
-                right: -100%;
-                top: 0;
-                bottom: 0;
-                border-top: 1px solid rgba(255,255,255,0.1);
-                border-bottom: 1px solid rgba(255,255,255,0.1);
-            }
-        }
-    }
-    &__center{
-        margin: 3.4rem 0 4.8rem;
-        .btn_size-xs{
-            margin-top: 0.2rem;
-        }
-    }
-    &__dropdown-toggle{
-        @include bp(md-up){
-            &:hover{
-                cursor: auto;
-                color: $light;
-            }
-            &::after, &::before{
-                display: none;
-            }
-        }
-        @include bp(sm){
-            font-size: 1.2rem;
-            line-height: 1.4rem;  
-        }
-    }
-    &__collapse{
-        @include bp(lg-up){
-            display: block!important;
-            height: auto!important;
-        }
-        @include bp(sm){
-            
-        }
-        &-title{
-            margin-bottom: 1.4rem;
-            @include bp(sm){
-                margin-top: 0.6rem;
-            }
-        }
     }
     &__bottom{
-        @include bp(lg-up){
-            padding-right: 6.5%;
-        }
+        border-top: 1px solid rgba($black,0.2);
     }
 }
 

@@ -18,8 +18,8 @@
     }
     &__top{
         width: 42.5%;
-        padding: 1.6rem 0 1.3rem;
-        border-bottom: 1px solid $black;
+        padding: 1.6rem 0 1.2rem;
+        border-bottom: 1px solid rgba($black, 0.2);
     }
 }
 .logo{
@@ -32,6 +32,7 @@
     &:hover{opacity: 0.7;}
 }
 .social-list{
+    margin-top: 0.1rem;
     &__item{
         &:not(:first-child){
             margin-left: 1.2rem;
@@ -52,7 +53,7 @@
         &__item{
             @include bp(lg-up){
                 &:not(:first-child){
-                    margin-left: 4rem;
+                    margin-left: 4.05rem;
                 }
                 &:hover{
                     &>.nav-list__dropdown-menu{

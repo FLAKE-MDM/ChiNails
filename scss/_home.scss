@@ -102,3 +102,41 @@
         }
     }
 }
+
+// about-section
+.about{
+    &-section{
+        position: relative;
+        &::before, &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+        }
+        &::before{
+            height: 27.7rem;
+            width: 47.7rem;
+            left: 0;
+            background: url(../img/about-before.svg) 0 0 no-repeat;
+            background-size: contain;
+        }
+        &::after{
+            width: 52.8rem;
+            height: 18.7rem;
+            right: 0;
+            background: url(../img/about-after.svg) 100% 0 no-repeat;
+            background-size: contain;
+        }
+        &__content{
+            max-width: 59.2rem;
+            margin: 0 auto;
+            margin-bottom: 4.5rem;
+            p{
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+    &-slider{
+        padding-top: 0.2rem;
+    }
+}

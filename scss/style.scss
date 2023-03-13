@@ -100,21 +100,27 @@ body{
 
 // swiper
 .swiper{
-    // &-pagination{
-    //     &-bullet{
-    //         width: 0.6rem;
-    //         height: 0.6rem;
-    //         margin: 0 0.4rem;
-    //         opacity: 1;
-    //         &:hover, &-active{
-    //             background: $primary!important;
-    //         }
-    //     }
-    // }
+    &-pagination{
+        font-family: 'EB Garamond';
+        font-size: 32px;
+        line-height: 42px;
+        position: static;
+        letter-spacing: -0.3rem;
+    }
     &-btn{
         &:hover, &.swiper-button-disabled{
             opacity: 0.5;
         }
+    }
+    &-button-prev, &-button-next{
+        position: static;
+        margin: 0;
+        &:after{
+            display: none;
+        }
+    }
+    &-nav{
+        margin: 2.9rem 0 0;
     }
 }
 

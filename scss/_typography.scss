@@ -16,16 +16,16 @@ a{
 //     }
 // }
 .ms{
-    &-1{
-        margin-left: 0.4rem!important;
+    &_1{
+        margin-left: 0.4rem;
     }
 }
 .me{
-    &-1{
-        margin-right: 0.4rem!important;
+    &_1{
+        margin-right: 0.4rem;
     }
-    &-2{
-        margin-right: 0.8rem!important;
+    &_2{
+        margin-right: 0.8rem;
     }
 }
 .mb{
@@ -33,7 +33,7 @@ a{
         margin-bottom: 2.4rem;
     }
     &_sm{
-        margin-bottom: 3rem;
+        margin-bottom: 3.1rem;
     }
     &_md{
         margin-bottom: 5.6rem;
@@ -87,7 +87,9 @@ a{
             
         }
     }
-
+    &__icon{
+        margin-left: 2.4rem;
+    }
 }
 .text{
     // size
@@ -114,6 +116,9 @@ a{
     // colors
     &_primary{
         color: $primary;
+    }
+    &_light{
+        color: rgba($black, 0.7);
     }
     &_success{
         color: $success;

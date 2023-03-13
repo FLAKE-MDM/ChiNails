@@ -689,6 +689,12 @@ input:hover::-webkit-inner-spin-button {
   background-image: url(../img/icons/instagram.svg);
 }
 
+.icon-instagram_lg {
+  background-image: url(../img/icons/instagram.svg);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 .icon-whatsapp {
   background-image: url(../img/icons/whatsapp.svg);
 }
@@ -721,6 +727,13 @@ input:hover::-webkit-inner-spin-button {
   width: 9.3rem;
   height: 0.9rem;
   background-image: url(../img/icons/arrow-prev.svg);
+}
+
+.icon-arrow-next_sm {
+  width: 4.5rem;
+  height: 0.9rem;
+  background-image: url(../img/icons/arrow-next_sm.svg);
+  margin-left: 1.4rem;
 }
 
 .icon- {
@@ -896,6 +909,10 @@ a:hover > .icon-:after, .active > .icon-:after {
   min-width: 18.8rem;
 }
 
+.btn_size-md {
+  min-width: 20.5rem;
+}
+
 a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -907,16 +924,16 @@ a:hover {
   color: #a29f98;
 }
 
-.ms-1 {
-  margin-left: 0.4rem !important;
+.ms_1 {
+  margin-left: 0.4rem;
 }
 
-.me-1 {
-  margin-right: 0.4rem !important;
+.me_1 {
+  margin-right: 0.4rem;
 }
 
-.me-2 {
-  margin-right: 0.8rem !important;
+.me_2 {
+  margin-right: 0.8rem;
 }
 
 .mb_xs {
@@ -924,7 +941,7 @@ a:hover {
 }
 
 .mb_sm {
-  margin-bottom: 3rem;
+  margin-bottom: 3.1rem;
 }
 
 .mb_md {
@@ -976,6 +993,10 @@ a:hover {
   letter-spacing: 0.48rem;
 }
 
+.title__icon {
+  margin-left: 2.4rem;
+}
+
 .text_size-sm {
   font-size: 1.4rem;
   line-height: 2.1rem;
@@ -993,6 +1014,10 @@ a:hover {
 
 .text_primary {
   color: #F2EFE8;
+}
+
+.text_light {
+  color: rgba(69, 71, 70, 0.7);
 }
 
 .text_success {
@@ -1127,8 +1152,29 @@ body.overflow-none {
   padding-right: 1.6rem;
 }
 
+.swiper-pagination {
+  font-family: 'EB Garamond';
+  font-size: 32px;
+  line-height: 42px;
+  position: static;
+  letter-spacing: -0.3rem;
+}
+
 .swiper-btn:hover, .swiper-btn.swiper-button-disabled {
   opacity: 0.5;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: static;
+  margin: 0;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  display: none;
+}
+
+.swiper-nav {
+  margin: 2.9rem 0 0;
 }
 
 .form-control {
@@ -1745,8 +1791,8 @@ textarea.form-control_text {
 
 .header__top {
   width: 42.5%;
-  padding: 1.6rem 0 1.3rem;
-  border-bottom: 1px solid #454746;
+  padding: 1.6rem 0 1.2rem;
+  border-bottom: 1px solid rgba(69, 71, 70, 0.2);
 }
 
 .logo {
@@ -1760,6 +1806,10 @@ textarea.form-control_text {
 
 .logo:hover {
   opacity: 0.7;
+}
+
+.social-list {
+  margin-top: 0.1rem;
 }
 
 .social-list__item:not(:first-child) {
@@ -1780,7 +1830,7 @@ textarea.form-control_text {
 
 @media only screen and (min-width: 992px) {
   .nav-list__item:not(:first-child) {
-    margin-left: 4rem;
+    margin-left: 4.05rem;
   }
   .nav-list__item:hover > .nav-list__dropdown-menu {
     display: block;
@@ -2002,4 +2052,103 @@ textarea.form-control_text {
 
 .branch-item__buttons .btn {
   margin: 0 1.2rem;
+}
+
+.about-section {
+  position: relative;
+}
+
+.about-section::before, .about-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.about-section::before {
+  height: 27.7rem;
+  width: 47.7rem;
+  left: 0;
+  background: url(../img/about-before.svg) 0 0 no-repeat;
+  background-size: contain;
+}
+
+.about-section::after {
+  width: 52.8rem;
+  height: 18.7rem;
+  right: 0;
+  background: url(../img/about-after.svg) 100% 0 no-repeat;
+  background-size: contain;
+}
+
+.about-section__content {
+  max-width: 59.2rem;
+  margin: 0 auto;
+  margin-bottom: 4.5rem;
+}
+
+.about-section__content p {
+  margin-bottom: 2.5rem;
+}
+
+.about-slider {
+  padding-top: 0.2rem;
+}
+
+.stock-item {
+  margin-bottom: 2.3rem;
+  border: 1px solid #454746;
+}
+
+.stock-item .icon-arrow-next_sm {
+  margin-bottom: 0.2rem;
+}
+
+.stock-item__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F2EFE8;
+  padding: 3.2rem 3.1rem 2.4rem;
+  width: 57.4%;
+}
+
+.stock-item__info {
+  letter-spacing: 0.01rem;
+  margin-bottom: 1.4rem;
+}
+
+.stock-item__title {
+  margin-bottom: 0.4rem;
+}
+
+.stock-item__description {
+  margin: 1rem 0;
+  letter-spacing: 0.004rem;
+}
+
+.stock-item__link {
+  margin-top: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .stock-item__image {
+    border-right: 1px solid #454746;
+  }
+  .stock-item__image.order-md-2 {
+    border-right: none;
+    border-left: 1px solid #454746;
+  }
+}
+
+.stock-item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
