@@ -3,23 +3,26 @@
     position: relative;
     font-family: 'EB Garamond';
     font-size: 1.8rem;
-    &__info{
-        background: #fff;
-        padding: 0.7rem 0 0.9rem 1.7%;
-        line-height: 1.7rem;
-        @include bp(sm){
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-            padding: 0.6rem 0 0.7rem 0;
-            .circle-arrow{
-                margin: -0.1rem 0 0 0.7rem;
-            }
-        }
+    @include bp(xl){
+        font-size: 1.7rem;
+    }
+    @include bp(md){
+        border-bottom: 1px solid rgba($black, 0.2);
+    }
+    @include bp(sm){
+        margin-bottom: 5rem;
     }
     &__top{
         width: 42.5%;
         padding: 1.6rem 0 1.2rem;
         border-bottom: 1px solid rgba($black, 0.2);
+        @include bp(md){
+            border: none;
+        }
+        @include bp(sm){
+            width: 100%;
+            padding: 1.5rem 0;
+        }
     }
 }
 .logo{
@@ -29,16 +32,34 @@
     top: 2.3rem;
     width: 15.1rem;
     margin: 0 auto;
+    @include bp(lg){
+        width: 12rem;
+    }
+    @include bp(md){
+        width: 8rem;
+        top: 1rem;
+    }
+    @include bp(sm){
+        width: 6rem;
+        top: 0.5rem;
+    }
     &:hover{opacity: 0.7;}
 }
 .social-list{
-    margin-top: 0.1rem;
     &__item{
         &:not(:first-child){
-            margin-left: 1.2rem;
+            margin-left: 1.6rem;
         }
         &:hover{
             opacity: 0.7;
+        }
+    }
+    &_md{
+        .social-list__item{
+            width: 2.4rem;
+            height: 2.4rem;
+            margin: 0 2.4rem 0 0;
+            &:last-child{margin-right: 0;}
         }
     }
 }
@@ -47,32 +68,58 @@
 }
 .navbar{
     padding: 2.2rem 0;
+    @include bp(md){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 0;
+        z-index: 95;
+        background: #fff;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+        border-top: 1px solid rgba($black, 0.2);
+    }
+    .dropdown-menu{
+        @include bp(md){
+            position: static;
+            box-shadow: none;
+            margin: 0!important;
+        }
+    }
 }
 .nav{
     &-list{
+        @include bp(md){
+            max-width: 72rem;
+            margin: 0 auto;
+            &:first-child{
+                padding-top: 1rem;
+            }
+            &:last-child{
+                padding-bottom: 1rem;
+            }
+        }
         &__item{
             @include bp(lg-up){
                 &:not(:first-child){
-                    margin-left: 4.05rem;
+                    margin-left: 2rem;
                 }
-                &:hover{
-                    &>.nav-list__dropdown-menu{
-                        display: block;
-                        height: auto!important;
-                    }
-                    &>.dropdown-toggle{
-                        color: $primary;
-                        &::after{opacity: 0;}
-                        &::before{opacity: 1;}
-                    }
+            }
+            @include bp(xl-up){
+                &:not(:first-child){
+                    margin-left: 3rem;
+                }
+            }
+            @include bp(xxl-up){
+                &:not(:first-child){
+                    margin-left: 4.05rem;
                 }
             }
             @include bp(lg){
-                margin-right: 2rem;
+
             }
             @include bp(md){
-                margin-right: 0;
-                padding: 0;
+
             }
         }
         &__link{
@@ -80,41 +127,18 @@
             line-height: 2.1rem;
             text-transform: uppercase;
             display: inline-flex;
+            @include bp(lg){
+                font-size: 1.4rem;
+            }
+            @include bp(md){
+                display: block;
+                padding: 1rem 1.5rem;
+                font-size: 1.8rem;
+            }
             &.active{
                 color: $primary - 80;
             }
-            @include bp(lg){
-                
-            }
-            @include bp(md){
-                
-            }
         }
-    }
-}
-.dropdown-link{
-    margin-bottom: 1.4rem;
-    &:hover{
-        color: $black;
-    }
-    &__image{
-        min-width: 5rem;
-        flex-shrink: 0;
-        margin-right: 0.9rem;
-        display: flex;
-        justify-content: center;
-    }
-    &__title{
-        margin: 0 auto 0.1rem 0;
-        min-height: 4rem;
-    }
-    &__price{
-        white-space: nowrap;
-        margin: 0 0 2.2rem 2rem;
-    }
-    .circle-arrow{
-        flex-shrink: 0;
-        margin-bottom: 2.2rem;
     }
 }
 .btn-menu{
@@ -123,20 +147,20 @@
     align-self: center;
     background: none;
     flex-shrink: 0;
+    transition: all 0.3s ease-out;
+    margin-right: 2rem;
+    transform: rotate(90deg);
+    &.collapsed{
+        transform: none;
+    }
     &__item{
         display: block;
-        width: 2rem;
+        width: 2.2rem;
         height: 0.2rem;
         border-top-style: 5px;
-        background: #fff;
-        transition: all 0.3s ease-out;
+        background: $black;
     }
     &__item+&__item{
-        margin-top: 0.5rem;
-    }
-    &:hover{
-        .btn-menu__item{
-            background: $primary;
-        }
+        margin-top: 0.3rem;
     }
 }

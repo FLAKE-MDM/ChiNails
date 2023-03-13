@@ -1,22 +1,19 @@
 .footer{
     border-top: 1px solid rgba($black,0.2);
     margin-top: auto;
-    padding-top: 4rem;
+    padding-top: 1.1rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     @include bp(md){
     }
-    &-nav{
-        .nav-list__item{
-            margin-right: 3.35rem;
-            padding: 1.2rem 0;
-        }
-        .circle-arrow{
-            top: -0.1rem;
+    &__title{
+        @include bp(lg){
+            margin-bottom: 1.5rem;
         }
     }
-    &__phone{
-        margin: 0.5rem 0 0;
-        @include bp(sm){
-
+    &-nav{
+        &__item{
+           margin-bottom: 1.5rem;
         }
     }
     &__social-list{
@@ -24,6 +21,9 @@
     }
     &__bottom{
         border-top: 1px solid rgba($black,0.2);
+        border-bottom: 1px solid rgba($black,0.2);
+        padding: 1.8rem 0;
+        margin-top: 3.4rem;
     }
 }
 

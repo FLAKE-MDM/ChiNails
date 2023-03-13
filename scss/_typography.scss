@@ -6,15 +6,12 @@ a{
         color: $primary - 80;
     }
 }
-// .link_underline{
-//     display: inline-block;
-//     padding-bottom: 0.8rem;
-//     border-bottom: 1px solid $primary;
-//     &:hover{
-//         text-decoration: none!important;
-//         border-color: transparent;
-//     }
-// }
+.link_underline{
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+}
 .ms{
     &_1{
         margin-left: 0.4rem;
@@ -31,21 +28,39 @@ a{
 .mb{
     &_xs{
         margin-bottom: 2.4rem;
+        @include bp(sm){
+            margin-bottom: 1.2rem;
+        }
     }
     &_sm{
         margin-bottom: 3.1rem;
+        @include bp(sm){
+            margin-bottom: 1.55rem;
+        }
     }
     &_md{
         margin-bottom: 5.6rem;
+        @include bp(sm){
+            margin-bottom: 2.8rem;
+        }
     }
     &_lg{
         margin-bottom: 6.5rem;
+        @include bp(sm){
+            margin-bottom: 3.25rem;
+        }
     }
     &_xl{
         margin-bottom: 8rem;
+        @include bp(sm){
+            margin-bottom: 4rem;
+        }
     }
     &_xxl{
         margin-bottom: 12.4rem;
+        @include bp(sm){
+            margin-bottom: 6.2rem;
+        }
     }
 }
 .mt{

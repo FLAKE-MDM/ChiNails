@@ -16,6 +16,9 @@
         margin: 0 auto;
         width: 11.8rem;
         transform: translateY(-50%);
+        @include bp(sm){
+            width: 9rem;
+        }
     }
 }
 
@@ -27,6 +30,13 @@
             position: absolute;
             top: 0;
             right: 1.6rem;
+            @include bp(md){
+                right: 0;
+            }
+            @include bp(sm){
+                position: static;
+                max-width: 100%;
+            }
         }
     }
     &__text{
@@ -59,15 +69,6 @@
             margin-right: -9.5%;
             padding-right: 9.5%;
         }
-        &-prev, &-next{
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &-next{
-            left: auto;
-            right: 0;
-        }
     }
 }
 .branch-item {
@@ -97,8 +98,16 @@
         justify-content: center;
         transition: all 0.3s ease-out;
         background: rgba($black, 0.5);
+        @include bp(md){
+            flex-direction: column;
+        }
         .btn{
             margin: 0 1.2rem;
+            @include bp(md){
+                &:not(:last-child){
+                    margin-bottom: 1.2rem;
+                }
+            }
         }
     }
 }
@@ -119,6 +128,12 @@
             left: 0;
             background: url(../img/about-before.svg) 0 0 no-repeat;
             background-size: contain;
+            @include bp(xl){
+                width: 25%;
+            }
+            @include bp(lg){
+                width: 20%;
+            }
         }
         &::after{
             width: 52.8rem;
@@ -126,6 +141,12 @@
             right: 0;
             background: url(../img/about-after.svg) 100% 0 no-repeat;
             background-size: contain;
+            @include bp(xl){
+                width: 25%;
+            }
+            @include bp(lg){
+                width: 20%;
+            }
         }
         &__content{
             max-width: 59.2rem;

@@ -8,11 +8,16 @@ $('.fake-select__item').click(function(){
 
 // home
 new Swiper(".branches-slider", {
-  slidesPerView: 2,
-  spaceBetween: 10,
+  slidesPerView: 1,
   navigation: {
     nextEl: ".branches-slider-next",
     prevEl: ".branches-slider-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
   },
   breakpoints: {
     1200: {

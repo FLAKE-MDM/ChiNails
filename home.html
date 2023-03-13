@@ -17,11 +17,16 @@
                 <a href="index.html" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
                 <div class="d-flex justify-content-between">
                     <div class="header__top d-flex align-items-center justify-content-between">
-                        <div class="work-time d-flex align-items-center">
+                        <a href="#navbar" class="btn-menu d-lg-none collapsed" data-bs-toggle="collapse">
+                            <div class="btn-menu__item"></div>
+                            <div class="btn-menu__item"></div>
+                            <div class="btn-menu__item"></div>
+                        </a>
+                        <div class="work-time d-xl-flex align-items-center d-none">
                             <span class="icon icon-time me_2"></span>
                             Ежедневно 10:00 - 20:00
                         </div>
-                        <div class="phone wropdown d-flex align-items-center fake-select">
+                        <div class="phone wropdown d-none d-lg-flex align-items-center fake-select">
                             <span class="icon icon-phone me_2"></span>
                             <div class="fake-select__value"><a href="tel:+79775174708">+7(977)517-47-08</a></div>
                             <a href="#" class="icon icon-caret" data-bs-toggle="dropdown"></a>
@@ -30,14 +35,14 @@
                                 <div class="fake-select__item"><a href="tel:+77777777777">+7(777)777-77-77</a></div>
                             </div>
                         </div>
-                        <div class="social-list">
+                        <div class="social-list d-flex">
                             <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
                             <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
                             <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
                         </div>
                     </div>
-                    <div class="header__top d-flex align-items-center justify-content-end">
-                        <a href="#" class="gift wropdown d-flex align-items-center">
+                    <div class="header__top d-none d-md-flex align-items-center justify-content-end">
+                        <a href="#" class="gift wropdown d-none d-xl-flex align-items-center">
                             <span class="icon icon-gift me_2"></span>
                             Подарочный сертификат
                         </a>
@@ -48,21 +53,21 @@
                         </a>
                     </div>
                 </div>
-                <nav id="navbar" class="d-md-flex justify-content-between navbar">
-                    <ul class="nav-list d-md-flex">
+                <nav id="navbar" class="d-lg-flex justify-content-between navbar collapse">
+                    <ul class="nav-list d-lg-flex">
                         <li class="nav-list__item"><a href="about.html" class="nav-list__link">о нас</a></li>
-                        <li class="nav-list__item"><a href="prices.html" class="nav-list__link">прайс</a></li>
-                        <li class="nav-list__item"><a href="prices.html#portfolio-section" class="nav-list__link">наши работы</a></li>
+                        <li class="nav-list__item"><a href="branch.html#prices" class="nav-list__link">прайс</a></li>
+                        <li class="nav-list__item"><a href="branch.html#portfolio-section" class="nav-list__link">наши работы</a></li>
                         <li class="nav-list__item dropdown">
                             <a href="text.html" class="nav-list__link d-inline-flex align-items-center" data-bs-toggle="dropdown">информация <span class="icon icon-caret ms-1"></span></a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-menu__link">Информация 1</a>
-                                <a href="#" class="dropdown-menu__link">Информация 2</a>
-                                <a href="#" class="dropdown-menu__link">Информация 3</a>
+                                <a href="#" class="dropdown-menu__link">Гарантия</a>
+                                <a href="#" class="dropdown-menu__link">Правила отмены</a>
+                                <a href="#" class="dropdown-menu__link">Политики конфиденциальности</a>
                             </div>
                         </li>
                     </ul>
-                    <ul class="nav-list d-md-flex">
+                    <ul class="nav-list d-lg-flex">
                         <li class="nav-list__item"><a href="vacancies.html" class="nav-list__link">вакансии</a></li>
                         <li class="nav-list__item"><a href="stock.html" class="nav-list__link">акции</a></li>
                         <li class="nav-list__item"><a href="news.html" class="nav-list__link">Новости</a></li>
@@ -96,10 +101,10 @@
             <div class="brief-price mb_xxl">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5 col-lg">
                             <div class="brief-price__image"><img src="img/brief-price.jpg" alt=""></div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-7 col-lg">
                             <div class="brief-price__text">
                                 <div class="title_size-md mb_lg">Краткий прайс</div>
                                 <div class="price-group">
@@ -160,9 +165,11 @@
             <!-- branches-section -->
             <div class="container">
                 <div class="branches-section mb_xxl">
-                    <div class="title_size-md text_center mb_xl">Наши филиалы</div>
-                    <a href="#" class="icon icon-arrow-prev branches-slider-prev swiper-btn"></a>
-                    <a href="#" class="icon icon-arrow-next branches-slider-next swiper-btn"></a>
+                    <div class="d-flex justify-content-between flex-wrap align-items-center mb_xl">
+                        <div class="title_size-md text_center order-md-2 mb-5 mb-md-0 w-100_sm">Наши филиалы</div>
+                        <a href="#" class="icon icon-arrow-prev branches-slider-prev swiper-btn"></a>
+                        <a href="#" class="icon icon-arrow-next branches-slider-next swiper-btn order-md-3"></a>
+                    </div>
                     <div class="branches-slider swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -218,7 +225,7 @@
             <!-- stock-section -->
             <div class="container">
                 <div class="title_size-md text_center mb_md">Акции</div>
-                <div class="stock-item d-md-flex">
+                <div class="stock-item d-lg-flex">
                     <div class="stock-item__image"><img src="img/content/stock-1.jpg" alt=""></div>
                     <div class="stock-item__body">
                         <div class="stock-item__info">
@@ -229,7 +236,7 @@
                         <a href="#" class="stock-item__link text_styling text_size-md">Записаться<span class="icon icon-arrow-next_sm"></span></a>
                     </div>
                 </div>
-                <div class="stock-item d-md-flex">
+                <div class="stock-item d-lg-flex">
                     <div class="stock-item__image order-md-2"><img src="img/content/stock-2.jpg" alt=""></div>
                     <div class="stock-item__body">
                         <div class="stock-item__info">
@@ -240,7 +247,7 @@
                         <a href="#" class="stock-item__link text_styling text_size-md">Записаться<span class="icon icon-arrow-next_sm"></span></a>
                     </div>
                 </div>
-                <div class="stock-item d-md-flex">
+                <div class="stock-item d-lg-flex">
                     <div class="stock-item__image"><img src="img/content/stock-3.jpg" alt=""></div>
                     <div class="stock-item__body">
                         <div class="stock-item__info">
@@ -289,10 +296,10 @@
             <div class="container">
                 <div class="title_size-md d-flex justify-content-center align-items-center mb_md">Наш Instagram <span class="icon icon-instagram_lg title__icon"></span></div>
                 <div class="row mb_xxl">
-                    <div class="col-md-3 col-6 mb_xs"><img src="img/content/instagram-1.jpg" alt="" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 mb_xs"><img src="img/content/instagram-2.jpg" alt="" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 mb_xs"><img src="img/content/instagram-3.jpg" alt="" class="img-fluid"></div>
-                    <div class="col-md-3 col-6 mb_xs"><img src="img/content/instagram-4.jpg" alt="" class="img-fluid"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-1.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-2.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-3.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-4.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
                 </div>
             </div>
             <!-- /instagram-section -->
@@ -300,7 +307,74 @@
         <!-- /content -->
         <!-- footer -->
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-md-block d-none">
+                        <div class="footer__title mt_sm mb_sm text_light text_size-sm">Меню</div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">О нас</a></li>
+                                    <li class="footer-nav__item"><a href="branch.html#prices" class="footer-nav__link">Прайс</a></li>
+                                    <li class="footer-nav__item"><a href="branch.html#portfolio-section" class="footer-nav__link">Наши работы</a></li>
+                                    <li class="footer-nav__item"><a href="vacancies.html" class="footer-nav__link">Вакансии</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6">
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="stock.html" class="footer-nav__link">Акции</a></li>
+                                    <li class="footer-nav__item"><a href="news.html" class="footer-nav__link">Новости</a></li>
+                                    <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xl-6 d-md-block d-none">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Информация</div>
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Гарантия</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Правила отмены</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политики конфиденциальности</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Филиалы</div>
+                                <p class="text_styling"><a href="tel:+79775174708">+7(977)517-47-08</a></p>
+                                <p class="ms-2 mb_xs text_light text_size-sm">ул. Поляны, 5а к1</p>
+                                <p class="text_styling"><a href="tel:+79775174717">+7(977)517-47-17</a></p>
+                                <p class="ms-2 text_light text_size-sm">ул. Феодосийская, 7 к6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">График работы</div>
+                                <p class="text_styling">Ежедневно <br>с 10:00 до 20:00</p>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Соцсети</div>
+                                <div class="social-list d-flex social-list_md">
+                                    <a href="#" class="social-list__item icon icon-facebook" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_light text_size-sm">
+                <div class="container">
+                    <div class="d-md-flex justify-content-between">
+                        <div class="copyright">© ChiNails Studio 2021. All right reserved</div>
+                        <div class="producer">Developed by <a href="#" class="text_light link_underline">LeMarchal</a></div>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- /footer -->
 
