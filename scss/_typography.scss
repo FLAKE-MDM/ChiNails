@@ -93,10 +93,18 @@ a{
         }
         &-md{
             font: 400 4rem/5.2rem 'EB Garamond', serif;
+            @include bp(sm){
+                font-size: 3rem;
+                line-height: 4rem;
+            }
         }
         &-lg{
             font: 400 4.8rem/6.3rem 'EB Garamond', serif;
             letter-spacing: 0.48rem;
+            @include bp(sm){
+                font-size: 4rem;
+                line-height: 5rem;
+            }
         }
         &-xl{
             

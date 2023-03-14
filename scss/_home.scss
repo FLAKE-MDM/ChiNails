@@ -53,8 +53,15 @@
         border-bottom: 1px solid rgba($black, 0.2);
         padding-bottom: 1.8rem;
         margin-bottom: 1.5rem;
+        &_lg{
+            padding-bottom: 2rem;
+            margin-bottom: 2.1rem;
+        }
         &__title{
             margin: 0 2rem 0.2rem 0;
+        }
+        b{
+            flex-shrink: 0;
         }
     }
 }

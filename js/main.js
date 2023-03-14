@@ -18,13 +18,13 @@ new Swiper(".branches-slider", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-  },
-  breakpoints: {
     1200: {
+      slidesPerView: 2,
       spaceBetween: 32,
     },
   },
 });
+
 new Swiper(".about-slider", {
   slidesPerView: 1,
   navigation: {
@@ -37,9 +37,44 @@ new Swiper(".about-slider", {
   },
 });
 
+// branch
+$(document).ready(function(){$('.slow').bind("click",function(e){var anchor=$(this);$('html, body').stop().animate({scrollTop:$(anchor.attr('href')).offset().top},1000);e.preventDefault();});});
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const width = window.innerWidth
+  if (width < 768){
+    new Swiper(".nav-slider", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      freeMode: true,
+      breakpoints: {
+        576: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+})
 
+new Swiper(".portfolio-slider", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
 
 
 // // home

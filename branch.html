@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiNails</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body_home">
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="img/logo.svg" alt="" class="img-fluid"></a>
+                <div class="d-flex justify-content-between">
+                    <div class="header__top d-flex align-items-center justify-content-between">
+                        <a href="#navbar" class="btn-menu d-lg-none collapsed" data-bs-toggle="collapse">
+                            <div class="btn-menu__item"></div>
+                            <div class="btn-menu__item"></div>
+                            <div class="btn-menu__item"></div>
+                        </a>
+                        <div class="work-time d-xl-flex align-items-center d-none">
+                            <span class="icon icon-time me_2"></span>
+                            Ежедневно 10:00 - 20:00
+                        </div>
+                        <div class="phone wropdown d-none d-lg-flex align-items-center fake-select">
+                            <span class="icon icon-phone me_2"></span>
+                            <div class="fake-select__value"><a href="tel:+79775174708">+7(977)517-47-08</a></div>
+                            <a href="#" class="icon icon-caret" data-bs-toggle="dropdown"></a>
+                            <div class="dropdown-menu dropdown-menu_right fake-select__dropdown">
+                                <div class="fake-select__item"><a href="tel:+79999999999">+7(999)999-99-99</a></div>
+                                <div class="fake-select__item"><a href="tel:+77777777777">+7(777)777-77-77</a></div>
+                            </div>
+                        </div>
+                        <div class="social-list d-flex">
+                            <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                            <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                        </div>
+                    </div>
+                    <div class="header__top d-none d-md-flex align-items-center justify-content-end">
+                        <a href="#" class="gift wropdown d-none d-xl-flex align-items-center">
+                            <span class="icon icon-gift me_2"></span>
+                            Подарочный сертификат
+                        </a>
+                        <a href="#" class="btn btn_transparent btn_size-xs">
+                            <span class="btn__before"></span>
+                            <span class="btn__after"></span>
+                            Запись онлайн
+                        </a>
+                    </div>
+                </div>
+                <nav id="navbar" class="d-lg-flex justify-content-between navbar collapse">
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="about.html" class="nav-list__link">о нас</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">прайс</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link">наши работы</a></li>
+                        <li class="nav-list__item dropdown">
+                            <a href="text.html" class="nav-list__link d-inline-flex align-items-center" data-bs-toggle="dropdown">информация <span class="icon icon-caret ms-1"></span></a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-menu__link">Гарантия</a>
+                                <a href="#" class="dropdown-menu__link">Правила отмены</a>
+                                <a href="#" class="dropdown-menu__link">Политики конфиденциальности</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav-list d-lg-flex">
+                        <li class="nav-list__item"><a href="vacancies.html" class="nav-list__link">вакансии</a></li>
+                        <li class="nav-list__item"><a href="stock.html" class="nav-list__link">акции</a></li>
+                        <li class="nav-list__item"><a href="news.html" class="nav-list__link">Новости</a></li>
+                        <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- content -->
+        <div class="content">
+            <!-- preview-branch -->
+            <div class="preview-branch mb_xxl">
+                <div class="container">
+                    <div class="row align-content-center mb_md pb-1">
+                        <div class="col-lg-4">
+                            <h1 class="title_size-lg text_upper mb-4">ChiNails поляны</h1>
+                            <p>Какое-нибудь описание <br>в пару строк</p>
+                        </div>
+                        <div class="col-lg-8 mt-4">
+                           <div class="row">
+                                <div class="col-6 col-md-3">
+                                    <a href="#pricelist-section" class="btn btn_square w-100 slow mb-4 mb-md-0">
+                                        <span class="btn__before"></span>
+                                        <span class="btn__after"></span>
+                                        Прайслист
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="#stock-section" class="btn btn_square w-100 slow mb-4 mb-md-0">
+                                        <span class="btn__before"></span>
+                                        <span class="btn__after"></span>
+                                        Акции
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="#portfolio-section" class="btn btn_square w-100 slow">
+                                        <span class="btn__before"></span>
+                                        <span class="btn__after"></span>
+                                        Работы мастеров салона
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="#contacts-section" class="btn btn_square w-100 slow">
+                                        <span class="btn__before"></span>
+                                        <span class="btn__after"></span>
+                                        Контакты <br>и карта
+                                    </a>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-branch__image d-flex justify-content-center">
+                    <img src="img/preview-branch.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- /preview-branch -->
+            <!-- pricelist-section -->
+            <div class="pricelist-section mb_xxl" id="pricelist-section">
+                <div class="container">
+                    <div class="title_size-md text_center mb_md">Прайслист</div>
+                    <div class="swiper nav-slider">
+                        <div class="swiper-wrapper nav tab-nav text_styling text_size-md">
+                            <a href="#tab-1" class="swiper-slide tab-nav__link active" data-bs-toggle="tab">Комплексный маникюр</a>
+                            <a href="#tab-2" class="swiper-slide tab-nav__link" data-bs-toggle="tab">Комплексный педикюр</a>
+                            <a href="#tab-3" class="swiper-slide tab-nav__link" data-bs-toggle="tab">Маникюр</a>
+                            <a href="#tab-4" class="swiper-slide tab-nav__link" data-bs-toggle="tab">Педикюр</a>
+                            <a href="#tab-5" class="swiper-slide tab-nav__link" data-bs-toggle="tab">Дизайн</a>
+                            <a href="#tab-6" class="swiper-slide tab-nav__link" data-bs-toggle="tab">Брови</a>
+                        </div>
+                    </div>
+                    <div class="tab-content mt_lg">
+                        <div class="tab-pane active" id="tab-1">
+                            <div class="row row_lg">
+                                <div class="col-lg-6">
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/<wbr>комбинированный/<wbr>классический маникюр+<wbr>снятие+<wbr>покрытие luxio</div>
+                                            <b>2 100 руб</b>
+                                        </div>
+                                    </div>
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/<wbr>комбинированный/<wbr>классический маникюр+<wbr>снятие+<wbr>покрытие beautix</div>
+                                            <b>1 800 руб</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/<wbr>комбинированный/<wbr>классический маникюр+покрытие luxio</div>
+                                            <b>1 800 руб</b>
+                                        </div>
+                                    </div>
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/<wbr>комбинированный/<wbr>классический маникюр+покрытие beautix</div>
+                                            <b>1 500 руб</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row row_lg">
+                                <div class="col-lg-6">
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/комбинированный/классический маникюр+снятие+покрытие luxio</div>
+                                            <b>2 100 руб</b>
+                                        </div>
+                                    </div>
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/комбинированный/классический маникюр+снятие+покрытие beautix</div>
+                                            <b>1 800 руб</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row row_lg">
+                                <div class="col-lg-6">
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/комбинированный/классический маникюр+<wbr>снятие+покрытие luxio</div>
+                                            <b>2 100 руб</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="price-item price-item_lg">
+                                        <div class="d-flex text_size-lg justify-content-between">
+                                            <div class="price-item__title">Аппаратный/<wbr>комбинированный/<wbr>классический маникюр+<wbr>покрытие luxio</div>
+                                            <b>1 800 руб</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-4"></div>
+                        <div class="tab-pane" id="tab-5"></div>
+                        <div class="tab-pane" id="tab-6"></div>
+                    </div>
+                    <p class="text_center mt_sm">
+                        <a href="#" class="btn btn_size-lg">
+                            <span class="btn__before"></span>
+                            <span class="btn__after"></span>
+                            Записаться онлайн
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- /pricelist-section -->
+            <!-- stock-section -->
+            <div id="stock-section">
+                <div class="container">
+                    <div class="title_size-md text_center mb_md">Акции</div>
+                    <div class="stock-item d-lg-flex">
+                        <div class="stock-item__image"><img src="img/content/stock-1.jpg" alt=""></div>
+                        <div class="stock-item__body">
+                            <div class="stock-item__info">
+                                <div class="text_size-lg stock-item__title"><strong>Скидка на комплексный маникюр -50%</strong></div>
+                                <div class="text_size-sm text_light">ChiNails  Гринада, до 30.01.2023</div>
+                            </div>
+                            <div class="stock-item__description">Как принято считать, некоторые особенности внутренней политики неоднозначны и будут в равной степени предоставлены сами себе. Следует отметить, что высокотехнологичная концепция общественного уклада влечет за собой процесс внедрения и модернизации глубокомысленных рассуждений.</div>
+                            <a href="#" class="stock-item__link text_styling text_size-md">Записаться<span class="icon icon-arrow-next_sm"></span></a>
+                        </div>
+                    </div>
+                    <div class="stock-item d-lg-flex">
+                        <div class="stock-item__image order-md-2"><img src="img/content/stock-2.jpg" alt=""></div>
+                        <div class="stock-item__body">
+                            <div class="stock-item__info">
+                                <div class="text_size-lg stock-item__title"><strong>Акция в честь открытия нового салона на Поляны</strong></div>
+                                <div class="text_size-sm text_light">ChiNails  Поляны, до 30.01.2023</div>
+                            </div>
+                            <div class="stock-item__description">На все услуги кроме дизайна скидка 10% и кофе в подарок</div>
+                            <a href="#" class="stock-item__link text_styling text_size-md">Записаться<span class="icon icon-arrow-next_sm"></span></a>
+                        </div>
+                    </div>
+                    <div class="stock-item d-lg-flex">
+                        <div class="stock-item__image"><img src="img/content/stock-3.jpg" alt=""></div>
+                        <div class="stock-item__body">
+                            <div class="stock-item__info">
+                                <div class="text_size-lg stock-item__title"><strong>Новогодняя акция!</strong></div>
+                                <div class="text_size-sm text_light">Все салоны, до 01.01.2022</div>
+                            </div>
+                            <div class="stock-item__description">Покупай комплексный маникюр и получишь удаление усиков в подарок! Или любую другую услугу, эквивалентную сумме 250 руб</div>
+                            <a href="#" class="stock-item__link text_styling text_size-md">Записаться<span class="icon icon-arrow-next_sm"></span></a>
+                        </div>
+                    </div>
+                    <div class="text_center mt_lg mb_xxl">
+                        <a href="stock.html" class="btn btn_size-md text_size-md">
+                            <span class="btn__before"></span>
+                            <span class="btn__after"></span>
+                            Все акции
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /stock-section -->
+            <!-- portfolio-section -->
+            <div class="portfolio-section mb_xxl" id="portfolio-section">
+                <div class="container">
+                    <div class="title_size-md text_center mb_md">Работы мастеров салона</div>
+                    <div class="portfolio-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/content/portfolio-1.jpg" alt="" class="img-fluid"></div>
+                            <div class="swiper-slide"><img src="img/content/portfolio-2.jpg" alt="" class="img-fluid"></div>
+                            <div class="swiper-slide"><img src="img/content/portfolio-3.jpg" alt="" class="img-fluid"></div>
+                            <div class="swiper-slide"><img src="img/content/portfolio-2.jpg" alt="" class="img-fluid"></div>
+                            <div class="swiper-slide"><img src="img/content/portfolio-1.jpg" alt="" class="img-fluid"></div>
+                            <div class="swiper-slide"><img src="img/content/portfolio-3.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                        <div class="d-flex justify-content-between swiper-nav align-items-center">
+                            <a href="#" class="icon icon-arrow-prev swiper-button-prev swiper-btn"></a>
+                            <div class="swiper-pagination"></div>
+                            <a href="#" class="icon icon-arrow-next swiper-button-next swiper-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /portfolio-section -->
+            <!-- contacts-section -->
+            <div id="contacts-section" class="mb_xxl">
+                <div class="container">
+                    <div class="title_size-md mb_sm pb-lg-4 text_center">Контакты салона</div>
+                    <div class="row pt-2">
+                        <div class="col-lg-4">
+                            <div class="contacts-block">
+                                <div class="contacts-item d-flex">
+                                    <div class="icon icon-pin contacts-item__icon mt-1"></div>
+                                    <div class="contacts-item__text">ул. Поляны, 5А, корп. 1, Москва, Россия</div>
+                                </div>
+                                <div class="contacts-item d-flex">
+                                    <div class="icon icon-metro contacts-item__icon"></div>
+                                    <div class="contacts-item__text">Улица Скобелевская</div>
+                                </div>
+                                <div class="contacts-item d-flex">
+                                    <div class="icon icon-phone contacts-item__icon"></div>
+                                    <div class="contacts-item__text"><a href="tel:+79775174708">+7 (977) 517-47-08</a></div>
+                                </div>
+                                <div class="contacts-item d-flex">
+                                    <div class="icon icon-time contacts-item__icon"></div>
+                                    <div class="contacts-item__text">Ежедневно 10:00 - 20:00</div>
+                                </div>
+                                <div class="social-list d-flex social-list_md mt-4 mt-lg-auto">
+                                    <a href="#" class="social-list__item icon icon-facebook" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.6491964187558!2d37.552420299615875!3d55.555515240819545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aade8011035d5%3A0x365c21040b3ad5ae!2z0YPQuy4g0J_QvtC70Y_QvdGLLCA10LAg0LrQvtGA0L_Rg9GBIDEsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGPLCAxMTcwNDI!5e0!3m2!1sru!2sua!4v1678806189762!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /contacts-section -->
+            <!-- instagram-section -->
+            <div class="container">
+                <div class="title_size-md d-flex justify-content-center align-items-center mb_md">Наш Instagram <span class="icon icon-instagram_lg title__icon"></span></div>
+                <div class="row mb_xxl">
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-1.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-2.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-3.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                    <div class="col-md-3 col-6"><img src="img/content/instagram-4.jpg" alt="" class="img-fluid mb-4 mb-md-0"></div>
+                </div>
+            </div>
+            <!-- /instagram-section -->
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-md-block d-none">
+                        <div class="footer__title mt_sm mb_sm text_light text_size-sm">Меню</div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">О нас</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Прайс</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Наши работы</a></li>
+                                    <li class="footer-nav__item"><a href="vacancies.html" class="footer-nav__link">Вакансии</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6">
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="stock.html" class="footer-nav__link">Акции</a></li>
+                                    <li class="footer-nav__item"><a href="news.html" class="footer-nav__link">Новости</a></li>
+                                    <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xl-6 d-md-block d-none">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Информация</div>
+                                <ul class="footer-nav text_styling">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Гарантия</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Правила отмены</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Политики конфиденциальности</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Филиалы</div>
+                                <p class="text_styling"><a href="tel:+79775174708">+7(977)517-47-08</a></p>
+                                <p class="ms-2 mb_xs text_light text_size-sm">ул. Поляны, 5а к1</p>
+                                <p class="text_styling"><a href="tel:+79775174717">+7(977)517-47-17</a></p>
+                                <p class="ms-2 text_light text_size-sm">ул. Феодосийская, 7 к6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">График работы</div>
+                                <p class="text_styling">Ежедневно <br>с 10:00 до 20:00</p>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="footer__title mt_sm mb_sm text_light text_size-sm">Соцсети</div>
+                                <div class="social-list d-flex social-list_md">
+                                    <a href="#" class="social-list__item icon icon-facebook" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_light text_size-sm">
+                <div class="container">
+                    <div class="d-md-flex justify-content-between">
+                        <div class="copyright">© ChiNails Studio 2021. All right reserved</div>
+                        <div class="producer">Developed by <a href="#" class="text_light link_underline">LeMarchal</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

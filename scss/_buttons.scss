@@ -72,73 +72,35 @@
             background: $primary;
         }
     }
-    // &_primary{
-    //     background: $primary;
-    //     color: #fff;
-    //     &:hover{
-    //         color: #fff;
-    //         background: $primary - 40;
-    //     }
-    // }
-    // &_primary-light{
-    //     color: $primary;
-    //     background: #EFE7FD;
-    //     &:hover{
-    //         color: #fff;
-    //         background: $primary;
-    //     }
-    // }
-    // &_inversion{
-    //     background: #fff;
-    //     color: $black;
-    //     &:hover{
-    //         color: #fff;
-    //         background: $primary;
-    //     }
-    //     &-lg{
-    //         @include bp(lg-up){
-    //             background: #fff;
-    //             color: $black;
-    //             &:hover{
-    //                 color: #fff;
-    //                 background: $primary;
-    //             }
-    //         }
-    //     }
-    // }
-    // &_dark{
-    //     background: $black;
-    //     color: #fff;
-    //     &:hover{
-    //         background: $primary;
-    //         color: #fff;
-    //     }
-    // }
-    // &_light{
-    //     background:#F1F1F1;
-    //     &:hover{
-    //         background: $primary;
-    //         color: #fff;
-    //     }
-    // }
-    // &_outline{
-    //     border: 1px solid #CBCBCB;
-    //     border-radius: 5px;
-    //     padding: 1.3rem 2.45rem;
-    //     &:hover{
-    //         border-color: $primary;
-    //     }
-    // }
-    // &_outline-light{
-    //     padding: 1.3rem 2.2rem;
-    //     background: #D9D9D9;
-    //     border: 1px solid #CBCBCB;
-    //     &:hover{
-    //         background: $primary;
-    //         border-color: $primary;
-    //         color: #fff;
-    //     }
-    // }
+    &_square{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 17.6rem;
+        white-space: normal;
+        padding: 1.5rem;
+        @include bp(lg){
+           min-height: 14rem;
+        }
+        @include bp(sm){
+            min-height: 17.6rem;
+         }
+         @include bp(xs){
+            min-height: 14rem;
+         }
+        .btn__before, .btn__after{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            &:before, &:after{
+                height: 3.1rem;
+                width: 3.1rem;
+            }
+        }
+    }
     &_size{
         &-xs{
             padding: 1.1rem 3.42rem;
@@ -150,6 +112,9 @@
         }
         &-md{
             min-width: 20.5rem;
+        }
+        &-lg{
+            min-width: 22.4rem;
         }
     }
 }
