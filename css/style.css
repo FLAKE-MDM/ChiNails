@@ -849,8 +849,8 @@ a:hover > .icon-:after, .active > .icon-:after {
 }
 
 .btn:hover .btn__before:before, .btn:hover .btn__before:after, .btn:hover .btn__after:before, .btn:hover .btn__after:after {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .btn__before, .btn__after {
@@ -872,7 +872,6 @@ a:hover > .icon-:after, .active > .icon-:after {
   left: 0;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  border-top: 1px solid #454746;
 }
 
 .btn__before:before, .btn__after:before {
@@ -885,11 +884,14 @@ a:hover > .icon-:after, .active > .icon-:after {
   border-right: 1px solid #454746;
 }
 
-.btn__after {
-  bottom: 0;
+.btn__before:before, .btn__before:after {
+  border-top: 1px solid #454746;
+}
+
+.btn__after:before, .btn__after:after {
   top: auto;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  bottom: 0;
+  border-bottom: 1px solid #454746;
 }
 
 .btn:disabled, .btn.disabled {
