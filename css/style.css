@@ -2966,3 +2966,34 @@ textarea.form-control_text {
 .collapse-item__inside .btn_size-xs {
   padding: 1.1rem 3.55rem;
 }
+
+.news-item {
+  display: block;
+}
+
+.news-item:hover .news-item__image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.news-item__image {
+  overflow: hidden;
+  border: 1px solid #454746;
+  margin-bottom: 2.4rem;
+}
+
+.news-item__image img {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.news-item__title {
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.008rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .news-item__title {
+    margin-right: 0.5rem;
+  }
+}
