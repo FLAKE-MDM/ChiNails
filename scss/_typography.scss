@@ -6,10 +6,22 @@ a{
         color: $primary - 80;
     }
 }
-.link_underline{
-    text-decoration: underline;
-    &:hover{
-        text-decoration: none;
+.link{
+    &_underline{
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &_dashed{
+        display: inline-block;
+        border-bottom: 1px dashed $black;
+        &.text_light{
+            border-color: rgba($black, 0.7);
+        }
+        &:hover{
+            border-color: transparent;
+        }
     }
 }
 .ms{
@@ -64,6 +76,9 @@ a{
     }
 }
 .mt{
+    &_minus-xxs{
+        margin-top: -1.2rem;
+    }
     &_xs{
         margin-top: 2.4rem;
     }
@@ -85,11 +100,8 @@ a{
 }
 .title{
     &_size{
-        &-xs{
-            
-        }
         &-sm{
-            
+            font: 400 2.4rem/3.1rem 'EB Garamond', serif;
         }
         &-md{
             font: 400 4rem/5.2rem 'EB Garamond', serif;
@@ -102,12 +114,9 @@ a{
             font: 400 4.8rem/6.3rem 'EB Garamond', serif;
             letter-spacing: 0.48rem;
             @include bp(sm){
-                font-size: 4rem;
-                line-height: 5rem;
+                font-size: 3.5rem;
+                line-height: 4.5rem;
             }
-        }
-        &-xl{
-            
         }
     }
     &__icon{
@@ -117,9 +126,6 @@ a{
 .text{
     // size
     &_size{
-        &-xs{
-            
-        }
         &-sm{
             font-size: 1.4rem;
             line-height: 2.1rem;
@@ -131,9 +137,6 @@ a{
         &-lg{
             font-size: 2rem;
             line-height: 3rem;
-        }
-        &-xl{
-            
         }
     }
     // colors

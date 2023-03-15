@@ -312,29 +312,39 @@ textarea.form-control_text{
         display: block;
         font-size: 1.4rem;
         line-height: 2rem;
-        &:not(:last-child){
-            margin-bottom: 2rem;
+        display: block;
+        padding: 1rem 1.5rem;
+        &.active, &.active:hover{
+            color: $black;
+            background: $primary;
         }
-        &:hover, &.fake-select__item_active{
-            color: $primary;
+        &:hover{
+            color: $black;
+            background: $primary - 10;
         }
     }
     &__link{
         white-space: nowrap;
+        padding: 0.6rem 2.5rem 0.6rem 0.3rem;
+        border-bottom: 1px solid $black;
+        display: block;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1.7rem;
+            right: 0.7rem;
+            border: 4px solid transparent;
+            border-top-color: $black;
+        }
         &.show{
-            border-color: $black;
+            &:after{
+                transform: rotate(180deg);
+            }
         }
         &.active{
             color: $black;
         }
-        &::after, &::before{
-            @include bp(md-up){
-                right: 1.9rem;
-            }
-        }
-    }
-    &__dropdown{
-        padding: 2rem;
     }
 }
 

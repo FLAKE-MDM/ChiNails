@@ -18,6 +18,9 @@
 .tab-content>.active {
   display: block;
 }
+.tab-content{
+  position: relative;
+}
 .fade {
   transition: opacity .15s linear;
 }
