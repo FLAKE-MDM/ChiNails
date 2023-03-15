@@ -65,6 +65,12 @@
     background-image: url(../img/icons/arrow-next_sm.svg);
     margin-left: 1.4rem;
 }
+.icon-arrow-prev_sm{
+    width: 4.5rem;
+    height: 0.9rem;
+    background-image: url(../img/icons/arrow-next_sm.svg);
+    transform: rotate(180deg);
+}
 .icon-shield{
     background-image: url(../img/icons/shield.svg);
 }
@@ -74,8 +80,14 @@
 .icon-cup{
     background-image: url(../img/icons/cup.svg);
 }
-
-
+.icon-money{
+    background-image: url(../img/icons/money.svg);
+}
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
 
 
 

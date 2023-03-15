@@ -141,7 +141,46 @@ body{
     }
 }
 
-
+// pagination
+.pagination{
+    margin-top: 6.5rem;
+    margin-left: -0.7rem;
+    margin-right: -0.7rem;
+    @include bp(md){
+        margin: 3.1rem 0 3.9rem;
+    }
+    &__item{
+        margin: 0 0.4rem;
+    }
+    &__link{
+       display: flex;
+       width: 6.4rem;
+       height: 6.4rem;
+       align-items: center;
+       justify-content: center;
+       background:  #F3EFEA;
+       @include bp(xs){
+            width: 4rem;
+            height: 4rem;
+        }
+       &:hover, &.active{
+        background: #E6E1DC;
+        color: $black;
+       }
+    }
+    .icon:hover, .icon.disabled{
+        opacity: 0.5;
+    }
+    &__dots{
+        width: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include bp(xs){
+            width: 3rem;
+        }
+    }
+}
 
 
 
@@ -153,6 +192,7 @@ body{
 @import 'branch';
 @import 'contacts';
 @import 'about';
+@import 'vacancies';
 
 
 

@@ -122,6 +122,17 @@ if(video){
 
 }
 
+// vacancies
+$(".collapse-item__link").click(function(){
+    $(this).toggleClass("active");
+    if($(this).find(".collapse-item__text")[0].innerHTML == "Подробнее"){
+      $(this).find(".collapse-item__text")[0].innerHTML = "Свернуть"
+    } else{
+      $(this).find(".collapse-item__text")[0].innerHTML = "Подробнее"
+    }
+  }
+)
+
 // // home
 // new Swiper(".preview-slider", {
 //   slidesPerView: 1,
