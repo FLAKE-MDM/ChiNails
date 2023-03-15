@@ -152,22 +152,6 @@ body{
     &__item{
         margin: 0 0.4rem;
     }
-    &__link{
-       display: flex;
-       width: 6.4rem;
-       height: 6.4rem;
-       align-items: center;
-       justify-content: center;
-       background:  #F3EFEA;
-       @include bp(xs){
-            width: 4rem;
-            height: 4rem;
-        }
-       &:hover, &.active{
-        background: #E6E1DC;
-        color: $black;
-       }
-    }
     .icon:hover, .icon.disabled{
         opacity: 0.5;
     }
@@ -181,6 +165,22 @@ body{
         }
     }
 }
+.page-numbers{
+    display: flex;
+    width: 6.4rem;
+    height: 6.4rem;
+    align-items: center;
+    justify-content: center;
+    background:  #F3EFEA;
+    @include bp(xs){
+         width: 4rem;
+         height: 4rem;
+     }
+    &:hover, &.active{
+     background: #E6E1DC;
+     color: $black;
+    }
+ }
 
 .line{
     border-top: 1px solid rgba($black, 0.2);
