@@ -1148,6 +1148,9 @@ a:hover {
 
 .title_size-lg {
   font: 400 4.8rem/6.3rem 'EB Garamond', serif;
+}
+
+.title_size-lg.text_upper {
   letter-spacing: 0.48rem;
 }
 
@@ -1445,6 +1448,10 @@ body.overflow-none {
   .pagination__dots {
     width: 3rem;
   }
+}
+
+.line {
+  border-top: 1px solid rgba(69, 71, 70, 0.2);
 }
 
 .form-control {
@@ -2996,4 +3003,53 @@ textarea.form-control_text {
   .news-item__title {
     margin-right: 0.5rem;
   }
+}
+
+.number-list {
+  list-style-type: decimal;
+  padding-left: 2.4rem;
+}
+
+.number-list li {
+  margin-bottom: 0.8rem;
+}
+
+.box {
+  background: #E5E1DC;
+  border: 1px solid #454746;
+  padding: 4rem 3.1rem 4.4rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .box {
+    padding: 2rem;
+  }
+}
+
+.quote {
+  position: relative;
+  padding-left: 6.3rem;
+  margin-top: -0.2rem;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .quote {
+    padding-left: 4.5rem;
+  }
+}
+
+.quote:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url(../img/icons/quote.svg) 0 0 no-repeat;
+  background-size: contain;
 }

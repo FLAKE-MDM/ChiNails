@@ -133,6 +133,35 @@ $(".collapse-item__link").click(function(){
   }
 )
 
+// article
+new Swiper(".news-slider", {
+  slidesPerView: 1,
+  loop: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+  navigation: {
+    nextEl: ".news-slider-next",
+    prevEl: ".news-slider-prev",
+  },
+});
+
+
+
+
+
+
+
+
+
+
 // // home
 // new Swiper(".preview-slider", {
 //   slidesPerView: 1,
