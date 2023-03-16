@@ -6,11 +6,14 @@
     @include bp(xl){
         font-size: 1.7rem;
     }
-    @include bp(md){
-        border-bottom: 1px solid rgba($black, 0.2);
-    }
     @include bp(sm){
-        margin-bottom: 5rem;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #fff;
     }
     &__top{
         width: 42.5%;

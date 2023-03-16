@@ -45,12 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = window.innerWidth
   if (width < 768){
     new Swiper(".nav-slider", {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
       freeMode: true,
       breakpoints: {
         576: {
-          slidesPerView: 3,
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
       },
     });

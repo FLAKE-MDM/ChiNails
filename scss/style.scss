@@ -17,22 +17,8 @@ body{
     font: 300 1.6rem/2.4rem 'Helvetica Neue', sans-serif;
     color: $black;
     background: #fff;
-
-    @include bp(md){
-
-    }
     @include bp(sm){
-
-    }
-
-    &.overflow-none{
-        overflow: hidden;
-        @include bp(xl-up){
-            padding-right: 1.7rem;
-            .header{
-                margin-right: 1.7rem;
-            }
-        }
+        padding-top: 10rem;
     }
 }
 .wrap{
@@ -185,6 +171,20 @@ body{
 .line{
     border-top: 1px solid rgba($black, 0.2);
 }
+
+.zoom-link{
+    overflow: hidden;
+    display: block;
+    img{
+        transition: all 0.5s ease-out;
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+
 
 
 @import 'form';
